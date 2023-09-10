@@ -1,0 +1,169 @@
+/* Default styles for all screens */
+body {
+  background-color: bisque;
+  margin: 0;
+  padding: 0;
+}
+
+#about-wrapper {
+  display: inline-flex;
+}
+
+header {
+  background-color: rgb(92, 42, 6);
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  height: 90px;
+}
+
+header a {
+  border-radius: 20%;
+  background-color: #1c1a13; /* Background color of the links */
+  border: 2px solid #130404; /* Optional border styling */
+  box-shadow: 0 6px 6px rgba(227, 184, 184, 0.1); /* Box shadow properties */
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-decoration: none;
+  font-size: larger;
+  align-content: center;
+  margin: 12vw;
+  color: goldenrod;
+  /* Adjust the margin to control spacing between links */
+}
+#title {
+  margin-top: 0;
+  font-family: "Verdana", "Geneva", "Tahoma", sans-serif;
+  color: rgb(170, 106, 9);
+  font-style: italic;
+  padding: 20px; /* Add padding to space the content from the edges of the page */
+  display: flex;
+  align-items: center;
+  border: solid 5px;
+  width: 1230px; /* Make it span the entire width of the page */
+  background-color: #111a38;
+  justify-content: space-between; /* Spread contents across the entire width */
+}
+
+#logob {
+  width: 200px; /* Reduce the logo size for better proportion */
+  height: 200px; /* Maintain aspect ratio */
+  border-radius: 30%; /* Use 30% for a circular shape */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  margin-right: 20px;
+}
+
+/* Optional: Center the text horizontally within #title */
+#title h1 {
+  margin: 0 auto;
+}
+
+/* Style the main content container */
+.container {
+  background-image: url("./images/about.png"); /* Replace 'your-image-url.jpg' with the actual URL or path to your image */
+
+  background-size: cover; /* Adjust the background size as needed */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-attachment: fixed; /* Fix the background image in place, or use 'scroll' to allow scrolling */
+  /* You can add more properties like 'background-position', 'background-color', etc. as needed */
+  /* Set a background color overlay */
+  position: relative; /* Required for pseudo-element positioning */
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#header-a {
+  background-color: #111a38;
+}
+/* Style headings */
+h1 {
+  font-family: "Verdana", "Geneva", "Tahoma", sans-serif;
+  color: rgb(170, 106, 9);
+  font-style: italic;
+  padding: 20px; /* Add padding to space the content from the edges of the page */
+  display: flex;
+  align-items: center;
+  border: solid 5px;
+  width: auto;
+  background-color: #172144;
+}
+
+/* Style list items */
+li {
+  letter-spacing: 1px;
+  font-weight: 200;
+  list-style: georgian;
+  margin-bottom: 20px;
+  font-size: larger;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: #20263a;
+  color: rgb(234, 159, 47);
+}
+
+/* Style checkmark bullet points */
+li::before {
+  content: "✅";
+  margin-right: 5px;
+  font-size: 16px;
+  color: #4caf50;
+}
+
+/* Style services list */
+.services-list {
+  padding-left: 20px;
+}
+
+/* Style contact information */
+.contact-info {
+  font-weight: bolder;
+  color: #333;
+  font-size: 18px;
+}
+
+/* Style social media icons */
+.social-icons {
+  list-style-type: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Media query for screens with a maximum width of 480px (smaller phones) */
+@media (max-width: 480px) {
+  body {
+    background-color: rgb(196, 122, 31);
+    margin: 0;
+    padding: 0;
+    /* Adjust body styles for smaller phones */
+  }
+
+  #about-wrapper {
+    display: inline-flex;
+    /* Adjust about-wrapper styles for smaller phones */
+  }
+
+  header {
+    width: 100%; /* Expand the header to full width on smaller phones */
+    /* Adjust header styles for smaller phones */
+  }
+
+  header a {
+    margin: 0 10px; /* Reduce the margin between links on smaller phones */
+    /* Adjust header link styles for smaller phones */
+  }
+
+  #logob {
+    width: 100px; /* Reduce the size of the logo on smaller phones */
+    height: 100px; /* Maintain aspect ratio */
+    padding-left: 10px; /* Adjust the padding for the logo on smaller phones */
+    /* Adjust logo styles for smaller phones */
+  }
+}
