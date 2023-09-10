@@ -39,7 +39,7 @@ header a {
   display: flex;
   align-items: center;
   border: solid 5px;
-  width: 1230px; /* Make it span the entire width of the page */
+  width: 1150px; /* Make it span the entire width of the page */
   background-color: #111a38;
   justify-content: space-between; /* Spread contents across the entire width */
 }
@@ -89,7 +89,13 @@ h1 {
   width: auto;
   background-color: #172144;
 }
-
+.headshot{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  padding-right: 50px;
+opacity: 0.7;
+}
 /* Style list items */
 li {
   letter-spacing: 1px;
