@@ -99,13 +99,14 @@ opacity: 0.7;
 /* Style list items */
 li {
   letter-spacing: 1px;
-  font-weight: 200;
+  font-weight: bolder;
   list-style: georgian;
   margin-bottom: 20px;
-  font-size: larger;
+  font-size: 25px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  background-color: #20263a;
-  color: rgb(234, 159, 47);
+  background-color: rgb(223, 189, 0);
+  color: navy;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2); /* Box shadow for the list */
 }
 
 /* Style checkmark bullet points */
