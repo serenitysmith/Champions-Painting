@@ -33,13 +33,13 @@ header a {
 #title {
   margin-top: 0;
   font-family: "Verdana", "Geneva", "Tahoma", sans-serif;
-  color: rgb(170, 106, 9);
+  color: goldenrod;
   font-style: italic;
   padding: 20px; /* Add padding to space the content from the edges of the page */
   display: flex;
   align-items: center;
   border: solid 5px;
-  width: 1150px; /* Make it span the entire width of the page */
+ 
   background-color: #111a38;
   justify-content: space-between; /* Spread contents across the entire width */
 }
@@ -98,14 +98,17 @@ opacity: 0.7;
 }
 /* Style list items */
 li {
+  text-decoration: underline;
+  line-height: 1.5;
+  font-style: italic; 
   letter-spacing: 1px;
   font-weight: bolder;
   list-style: georgian;
   margin-bottom: 20px;
   font-size: 25px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  background-color: rgb(223, 189, 0);
-  color: navy;
+  font-family: Arial, sans-serif;
+  background-color: #172144;
+  color: rgb(189, 123, 23);
   box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2); /* Box shadow for the list */
 }
 
@@ -143,34 +146,197 @@ li::before {
   color: #333;
 }
 
-/* Media query for screens with a maximum width of 480px (smaller phones) */
-@media (max-width: 480px) {
+p{
+  
+  height: auto;
+
+  line-height: 2.5;
+  font-style: italic; 
+  letter-spacing: 1px;
+  font-weight: bolder;
+  
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-family: Arial, sans-serif;
+  background-color: #172144;
+  color: goldenrod;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2); /* Box shadow for the list */
+}
+.home-footer{
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  width: auto;
+   background-color: rgb(28, 9, 9);
+   border: solid 2px;
+}
+.facebook {
+  height: 50px;
+  width: 50px;
+  
+}
+.chrome {
+  height: 50px;
+  width: 50px;
+ 
+}
+.link {
+  height: 50px;
+  width: 50px;
+ 
+}
+.next-door {
+  height: 50px;
+  width: 50px;
+ 
+}
+@media  (max-width: 1180px){
   body {
-    background-color: rgb(196, 122, 31);
+    background-color: rgb(166, 135, 94);
     margin: 0;
     padding: 0;
-    /* Adjust body styles for smaller phones */
   }
-
-  #about-wrapper {
-    display: inline-flex;
-    /* Adjust about-wrapper styles for smaller phones */
-  }
-
+  
+  
+  
   header {
-    width: 100%; /* Expand the header to full width on smaller phones */
-    /* Adjust header styles for smaller phones */
+    background-color: rgb(119, 61, 20);
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+    
   }
-
+  
   header a {
-    margin: 0 10px; /* Reduce the margin between links on smaller phones */
-    /* Adjust header link styles for smaller phones */
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10%;
+    background-color: #1c1c1b; /* Background color of the links */
+    border: 1px solid #570606; /* Optional border styling */
+    box-shadow: 0 2px 1px rgba(210, 149, 28, 0.1); /* Box shadow properties */
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: small;
+    font-weight: bolder;
+    align-content: center;
+    margin: 12px;
+    color: rgb(191, 191, 8);
+    /* Adjust the margin to control spacing between links */
   }
-
+  #title {
+    margin-top: 0;
+    font-family: "Verdana", "Geneva", "Tahoma", sans-serif;
+    color: rgb(170, 106, 9);
+    font-style: italic;
+    padding: 5px; /* Add padding to space the content from the edges of the page */
+    display: flex;
+    align-items: center;
+    border: solid 3px;
+    width: auto; /* Make it span the entire width of the page */
+    height: 100px;
+    background-color: #111a38;
+    justify-content: space-between; /* Spread contents across the entire width */
+  }
+  
   #logob {
-    width: 100px; /* Reduce the size of the logo on smaller phones */
-    height: 100px; /* Maintain aspect ratio */
-    padding-left: 10px; /* Adjust the padding for the logo on smaller phones */
-    /* Adjust logo styles for smaller phones */
+    width: 40px; /* Reduce the logo size for better proportion */
+    height: 40px; /* Maintain aspect ratio */
+    border-radius: 40%; /* Use 30% for a circular shape */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    margin-right: 5px;
   }
+  
+  /* Optional: Center the text horizontally within #title */
+  #title h1 {
+    margin: 0 auto;
+  }
+  
+  /* Style the main content container */
+  .container {
+    background-image: url("./images/about.png"); /* Replace 'your-image-url.jpg' with the actual URL or path to your image */
+  
+    background-size: cover; /* Adjust the background size as needed */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-attachment: fixed; /* Fix the background image in place, or use 'scroll' to allow scrolling */
+    /* You can add more properties like 'background-position', 'background-color', etc. as needed */
+    /* Set a background color overlay */
+    position: relative; /* Required for pseudo-element positioning */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  #header-a {
+    background-color: #111a38;
+  }
+  /* Style headings */
+  h1 {
+    font-size: large;
+    font-family: "Verdana", "Geneva", "Tahoma", sans-serif;
+    color: rgb(240, 161, 42);
+    font-style: italic;
+    padding: 10px; /* Add padding to space the content from the edges of the page */
+    display: flex;
+    align-items: center;
+    border: solid 1px;
+    width: auto;
+    background-color: #172144;
+  }
+  .headshot{
+    border-radius: 40%;
+    width: 100px;
+    height: 100px;
+    padding-right: 10px;
+  opacity: 0.7;
+  }
+  /* Style list items */
+  li {
+    text-decoration: underline;
+    line-height: 1.5;
+    font-weight: bolder;
+    list-style: georgian;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    background-color: #172144;
+  color: rgb(193, 122, 15);
+    font-style:italic;
+  }
+  
+  /* Style checkmark bullet points */
+  li::before {
+    content: "✅";
+    margin-right: 5px;
+    font-size: 12px;
+   
+  }
+  
+  /* Style services list */
+  .services-list {
+    padding-left: 10px;
+  }
+  
+  /* Style contact information */
+  .contact-info {
+    font-weight: bolder;
+    color: #333333;
+    font-size: 8px;
+  }
+  
+  /* Style social media icons */
+  .social-icons {
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 0;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 24px;
+    color: #333;
+  }
+  
 }

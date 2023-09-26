@@ -15,68 +15,65 @@
       </nav>
     </header>
 
-    <div id="about-wrapper">
+    <div >
       
       <H1 id="title".>
         <img src="./images/painting.png" alt="" id="logob" />
         Champion's Painting Projects Inc
-        <img src="./images/headshot.png" alt="" class="headshot">
+        <img src="./images/headshot.png" alt="meh" class="headshot">
 
       </H1>
     
     </div>
+    <p class="home-page-bio">
+     
+      Experience the Champion Difference <br>
+
+Expert Craftsmanship <br>
+
+Custom Solutions <br>
+Quality Beyond Paint <br>
+
+Timely Delivery <br>
+
+Let Champion Painting Projects Inc bring life and color to your spaces. <br>
+Contact us today for a free consultation and let us champion your painting project to success.
    
- 
-    <!-- <div id="welcomimg"></div> -->
-
-   
-
-    <!-- <div id="services-wrapper"> -->
-    <!-- <h1>Services</h1><br>
-        <table>
-            <tr>
-                <th>
-                    
-                </th>
-                <th>
-                 
-                </th>
-            </tr>
-            <tr>
-                <td>
-                
-                </td>
-                <td>
-                 
-                </td>
-            </tr>
-            <tr>
-                <td>
-                  
-                </td>
-                <td>
-                 
-                </td>
-            </tr>
-            <tr>
-                <td>
-                 
-                </td>
-                <td>
-                  
-                </td>
-            </tr>
-            <tr>
-                <td>
-                 
-                </td>
-                <td>
-                  
-            </tr>
-        </table> -->
-
-    <!-- </div> -->
+    </p>
+      
+    
+ <footer class="home-footer">
+<a href="https://www.facebook.com/"><img src="./images/facebook.png" alt="faceook" class="facebook"> </a>
+<a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&flowEntry=ServiceLogin&flowName=GlifWebSignIn&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&ifkv=AYZoVhcznKvgYmJLMscocYTpGtvsNdZ58K23vnIXnVGeqtXAFATpFst1ckj9GFezYAeYRF5tpgelDA&osid=1&passive=1209600&service=mail&theme=glif&dsh=S-1190330147%3A1695590570429422"><img src="./images/chrome.png" alt="chrome" class="chrome"></a>
+<a href="https://nextdoor.com/"><img src="./images/nextdoor.png" alt="next" class="next-door"></a>
+<a href="https://www.linkedin.com/"><img src="./images/linkedin.png" alt="linke" class="link"></a>
+ </footer>
+    
   </body>
 
   <script src="app.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+  <!-- Here is a script where we will be collecting data from the form  -->
+  <script>
+    $('form').on('submit', (e) => {
+        // e.preventDefault();
+
+        const name = $('#name').val().trim();
+        const email = $('#from-email').val().trim();
+        const subject = $('#subject').val().trim();
+        const text = $('#text').val().trim();
+
+        const data = {
+            name,
+            email,
+            subject,
+            text
+        };
+
+        $.post('/email', data, function() {
+            console.log('Server recieved our data');
+        });
+    });
+    // document.getElementById('#form-data').reset();
+</script>
 </html>
